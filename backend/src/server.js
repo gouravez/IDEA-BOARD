@@ -9,7 +9,7 @@ dotenv.config();
 const app = express();
 const PORT = process.env.PORT;
 
-import rateLimiter from "./middleware/ratelimiter.js";
+import rateLimiter from "./middleware/rateLimiter.js";
 
 // middleware -> function that runs in middle between request and response
 app.use(
