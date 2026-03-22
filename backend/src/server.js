@@ -14,7 +14,7 @@ import rateLimiter from "./middleware/rateLimiter.js";
 // middleware -> function that runs in middle between request and response
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: ["http://localhost:5173","https://idea-board-e5lk.vercel.app/"],
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
   })
