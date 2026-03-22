@@ -22,7 +22,6 @@ const corsOptions = {
 };
 
 app.use(cors(corsOptions));
-app.options("/*", cors(corsOptions));
 app.use(express.json()); // middleware to PARSE json bodies : req.body
 
 app.use((req, res, next) => {
