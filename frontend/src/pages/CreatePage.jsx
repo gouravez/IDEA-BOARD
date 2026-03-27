@@ -28,7 +28,7 @@ const CreatePage = () => {
       navigate("/");
     } catch (error) {
       console.log("Error Creating Note : ", error);
-      if ((error.response?.status = 429)) {
+      if ((error.response?.status === 429)) {
         toast.error("SLOW DOWN and Please try again after some time!", {
           duration: "4000",
         });
